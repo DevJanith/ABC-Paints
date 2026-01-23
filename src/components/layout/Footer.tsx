@@ -11,7 +11,11 @@ const Footer = () => {
                 <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
                     {/* Brand & Bio */}
                     <div className="col-span-1 md:col-span-1">
-                        <h3 className="text-2xl font-bold text-secondary mb-4">ABC Paints</h3>
+                        <img
+                            src="/logo-white.png"
+                            alt="ABC Paints"
+                            className="h-10 w-auto mb-4 object-contain"
+                        />
                         <p className="text-gray-400 text-sm">
                             {t('footer.about_desc')}
                         </p>

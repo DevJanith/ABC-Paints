@@ -53,9 +53,11 @@ const Header = () => {
                 <div className="flex justify-between h-16">
                     <div className="flex items-center">
                         <NavLink to="/" className="flex-shrink-0 flex items-center">
-                            <span className="text-2xl font-bold bg-gradient-to-r from-primary to-secondary bg-clip-text text-transparent">
-                                ABC Paints
-                            </span>
+                            <img
+                                src={isDark ? "/logo-white.png" : "/logo.png"}
+                                alt="ABC Paints - Health Paint Expert"
+                                className="h-10 sm:h-12 w-auto object-contain"
+                            />
                         </NavLink>
                     </div>
 
