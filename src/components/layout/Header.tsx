@@ -33,9 +33,9 @@ const Header = () => {
     const navItems = [
         { name: t('nav.home'), path: '/' },
         { name: t('nav.products'), path: '/products' },
-        // { name: t('nav.sellers'), path: '/sellers' }, -- UNDO for production
+        { name: t('nav.sellers'), path: '/sellers' },
         { name: t('nav.services'), path: '/services' },
-        // { name: t('nav.calculator'), path: '/calculator' }, -- UNDO for production
+        { name: t('nav.calculator'), path: '/calculator' },
         { name: t('nav.contact'), path: '/contact' },
     ];
 
@@ -67,8 +67,6 @@ const Header = () => {
                             </NavLink>
                         ))}
 
-                        {/* 
-                        -- UNDO for production
                         <div className="flex items-center space-x-2 ml-4 border-l pl-4 border-gray-200 dark:border-gray-700">
                             <button onClick={toggleLanguage} className="p-2 rounded-full hover:bg-gray-100 dark:hover:bg-gray-800 text-gray-700 dark:text-gray-300" aria-label="Toggle Language">
                                 <div className="flex items-center space-x-1">
@@ -79,21 +77,17 @@ const Header = () => {
                             <button onClick={toggleTheme} className="p-2 rounded-full hover:bg-gray-100 dark:hover:bg-gray-800 text-gray-700 dark:text-gray-300" aria-label="Toggle Theme">
                                 {isDark ? <Sun size={20} /> : <Moon size={20} />}
                             </button>
-                        </div> 
-                        */}
+                        </div>
                     </div>
 
                     {/* Mobile menu button */}
                     <div className="flex items-center md:hidden space-x-4">
-                        {/*
-                        -- UNDO for production
                         <button onClick={toggleLanguage} className="p-2 rounded-full hover:bg-gray-100 dark:hover:bg-gray-800 text-gray-700 dark:text-gray-300">
                             <span className="text-sm font-bold">{i18n.language === 'en' ? 'SI' : 'EN'}</span>
                         </button>
                         <button onClick={toggleTheme} className="p-2 rounded-full hover:bg-gray-100 dark:hover:bg-gray-800 text-gray-700 dark:text-gray-300">
                             {isDark ? <Sun size={20} /> : <Moon size={20} />}
-                        </button> 
-                        */}
+                        </button>
                         <button
                             onClick={() => setIsOpen(!isOpen)}
                             className="inline-flex items-center justify-center p-2 rounded-md text-gray-700 dark:text-gray-200 hover:text-primary dark:hover:text-white max-w-xs transition-colors"
