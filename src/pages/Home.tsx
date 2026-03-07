@@ -7,9 +7,10 @@ import SEO from '../components/SEO';
 import TrustedPartners from '../components/common/TrustedPartners';
 
 const carouselImages = [
-    '/images/carousel/carousel_1.png',
-    '/images/carousel/carousel_2.png',
-    '/images/carousel/carousel_3.png',
+    '/images/carousel/carousel_1.jpg',
+    '/images/carousel/carousel_2.jpeg',
+    '/images/carousel/carousel_3.jpeg',
+    '/images/carousel/carousel_4.jpeg',
 ];
 
 const Home = () => {
