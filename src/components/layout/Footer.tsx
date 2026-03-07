@@ -15,7 +15,7 @@ const Footer = () => {
                         <img
                             src="/logo.png"
                             alt="ABC Paints"
-                            className="w-auto mb-4 object-contain brightness-0 invert"
+                            className="h-10 sm:h-12 w-auto mb-4 object-contain brightness-0 invert"
                         />
                         <p className="text-gray-400 text-sm">
                             {t('footer.about_desc')}
