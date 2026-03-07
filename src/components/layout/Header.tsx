@@ -56,7 +56,7 @@ const Header = () => {
                             <img
                                 src="/logo.png"
                                 alt="ABC Paints - Health Paint Expert"
-                                className="sm:h-12 w-auto object-contain dark:brightness-0 dark:invert transition-all"
+                                className="h-8 sm:h-12 w-auto object-contain dark:brightness-0 dark:invert transition-all"
                             />
                         </NavLink>
                     </div>
