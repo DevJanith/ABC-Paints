@@ -9,7 +9,7 @@ const Services = () => {
         {
             icon: <Droplets size={40} className="text-blue-500" />,
             title: "Roof Waterproofing",
-            description: "Complete sealing solutions for concrete slabs, asbestos, and tiled roofs. 10-year warranty guaranteed."
+            description: "Complete sealing solutions for concrete slabs and tiled roofs. 10-year warranty guaranteed."
         },
         {
             icon: <Home size={40} className="text-secondary" />,
@@ -28,7 +28,7 @@ const Services = () => {
         },
         {
             icon: <PaintBucket size={40} className="text-red-500" />,
-            title: "Color Consultation",
+            title: "Color Mixing",
             description: "Expert advice on color selection and matching for your home or office."
         }
     ];
