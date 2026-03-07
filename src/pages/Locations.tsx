@@ -1,4 +1,5 @@
 import { MapPin } from 'lucide-react';
+import { siteConfig } from '../config/site';
 
 const Locations = () => {
     return (
@@ -26,7 +27,7 @@ const Locations = () => {
                             <MapPin className="text-secondary mr-2" />
                             <h2 className="text-xl font-bold dark:text-white">Colombo Main Showroom</h2>
                         </div>
-                        <p className="text-gray-600 dark:text-gray-400 mb-4 pl-8">123 Main Street, Colombo 03</p>
+                        <p className="text-gray-600 dark:text-gray-400 mb-4 pl-8">{siteConfig.contact.address}</p>
                         <p className="text-sm font-semibold text-primary dark:text-gray-300 pl-8">Opening Hours</p>
                         <p className="text-sm text-gray-500 pl-8">Mon - Sun: 8:00 AM - 6:00 PM</p>
                     </div>

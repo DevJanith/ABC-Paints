@@ -54,9 +54,9 @@ const Header = () => {
                     <div className="flex items-center">
                         <NavLink to="/" className="flex-shrink-0 flex items-center">
                             <img
-                                src={isDark ? "/logo-white.png" : "/logo.png"}
+                                src="/logo.png"
                                 alt="ABC Paints - Health Paint Expert"
-                                className="h-10 sm:h-12 w-auto object-contain"
+                                className="sm:h-12 w-auto object-contain dark:brightness-0 dark:invert transition-all"
                             />
                         </NavLink>
                     </div>

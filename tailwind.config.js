@@ -9,16 +9,16 @@ export default {
     extend: {
       colors: {
         primary: {
-          DEFAULT: '#1a1a1a', // Industrial Black
-          light: '#333333',
+          DEFAULT: '#004de6', // Brand Blue from logo
+          light: '#2a6df0',
         },
         secondary: {
-          DEFAULT: '#f5a623', // Safety Yellow / Gold accent - typical for construction/paints
-          light: '#ffc107',
+          DEFAULT: '#33bbff', // Accent Light Blue from logo
+          light: '#66ccff',
         },
         brand: {
           red: '#D32F2F', // Accessing standard paint brand colors if needed
-          blue: '#1976D2',
+          blue: '#004de6',
         },
         // Custom grays for industrial feel
         industrial: {
