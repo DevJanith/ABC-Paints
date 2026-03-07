@@ -37,7 +37,7 @@ const Footer = () => {
                         <h4 className="text-lg font-semibold mb-4 text-gray-200">{t('footer.quick_links')}</h4>
                         <ul className="space-y-2 text-gray-400 text-sm">
                             <li><a href="#" className="hover:text-white">Waterproofing services</a></li>
-                            <li><a href="#" className="hover:text-white">Roof Sealing</a></li>
+                            <li><a href="#" className="hover:text-white">Titanium Floor</a></li>
                             <li><a href="#" className="hover:text-white">Wall Painting</a></li>
                             <li><a href="#" className="hover:text-white">Construction Consultation</a></li>
                         </ul>
