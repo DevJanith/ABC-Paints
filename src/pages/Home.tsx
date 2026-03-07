@@ -1,11 +1,27 @@
 import { ArrowRight, Shield, Droplets, PenTool, LayoutGrid } from 'lucide-react';
 import { Link } from 'react-router-dom';
-import { motion } from 'framer-motion';
+import { motion, AnimatePresence } from 'framer-motion';
 import { useTranslation } from 'react-i18next';
+import { useState, useEffect } from 'react';
 import SEO from '../components/SEO';
+import TrustedPartners from '../components/common/TrustedPartners';
+
+const carouselImages = [
+    '/images/carousel/carousel_1.png',
+    '/images/carousel/carousel_2.png',
+    '/images/carousel/carousel_3.png',
+];
 
 const Home = () => {
     const { t } = useTranslation();
+    const [currentImageIndex, setCurrentImageIndex] = useState(0);
+
+    useEffect(() => {
+        const timer = setInterval(() => {
+            setCurrentImageIndex((prev) => (prev + 1) % carouselImages.length);
+        }, 5000);
+        return () => clearInterval(timer);
+    }, []);
 
     const fadeIn = {
         hidden: { opacity: 0, y: 20 },
@@ -21,12 +37,19 @@ const Home = () => {
             {/* Hero Section */}
             <section className="relative h-[80vh] flex items-center justify-center bg-gray-900 text-white overflow-hidden">
                 <div className="absolute inset-0 z-0">
-                    <img
-                        src="/hero.png"
-                        alt="Hero Background"
-                        className="w-full h-full object-cover opacity-50"
-                    />
-                    <div className="absolute inset-0 bg-gradient-to-b from-transparent to-gray-900/90" />
+                    <AnimatePresence mode="wait">
+                        <motion.img
+                            key={currentImageIndex}
+                            src={carouselImages[currentImageIndex]}
+                            alt="Hero Background"
+                            initial={{ opacity: 0, scale: 1.1 }}
+                            animate={{ opacity: 0.5, scale: 1 }}
+                            exit={{ opacity: 0 }}
+                            transition={{ duration: 1.5, ease: "easeInOut" }}
+                            className="absolute inset-0 w-full h-full object-cover"
+                        />
+                    </AnimatePresence>
+                    <div className="absolute inset-0 bg-gradient-to-b from-gray-900/40 via-transparent to-gray-900/90 z-[1]" />
                 </div>
 
                 <div className="relative z-10 text-center px-4 max-w-5xl mx-auto">
@@ -69,6 +92,8 @@ const Home = () => {
                     </motion.div>
                 </div>
             </section>
+
+            <TrustedPartners />
 
             {/* Features Grid */}
             <section className="py-20 bg-white dark:bg-gray-800">

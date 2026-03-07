@@ -48,6 +48,9 @@ const resources = {
                     "title": "Planning a Project?",
                     "desc": "Use our advanced cost calculator to estimate materials and budget for your next construction or renovation project.",
                     "btn": "Try Cost Calculator"
+                },
+                "trusted_partners": {
+                    "title": "Our Trusted Partners"
                 }
             },
             "sellers": {
@@ -134,6 +137,9 @@ const resources = {
                     "title": "ව්‍යාපෘතියක් සැලසුම් කරනවාද?",
                     "desc": "ඔබගේ ඊළඟ ඉදිකිරීම් හෝ ප්‍රතිසංස්කරණ ව්‍යාපෘතිය සඳහා ද්‍රව්‍ය සහ අයවැය තක්සේරු කිරීමට අපගේ පිරිවැය ගණක යන්ත්‍රය භාවිතා කරන්න.",
                     "btn": "පිරිවැය ගණනය කරන්න"
+                },
+                "trusted_partners": {
+                    "title": "අපගේ විශ්වාසවන්ත හවුල්කරුවන්"
                 }
             },
             "sellers": {
