@@ -6,10 +6,11 @@ import About from './pages/About';
 import Products from './pages/Products';
 import PaintsColors from './pages/PaintsColors';
 import Services from './pages/Services';
-import CalculatorPage from './pages/CalculatorPage';
+
 import Contractors from './pages/Contractors';
 import Locations from './pages/Locations';
 import Contact from './pages/Contact';
+import ComingSoon from './pages/ComingSoon';
 
 import Sellers from './pages/Sellers';
 
@@ -26,7 +27,7 @@ function App() {
             <Route path="products" element={<Products />} />
             <Route path="paints" element={<PaintsColors />} />
             <Route path="services" element={<Services />} />
-            <Route path="calculator" element={<CalculatorPage />} />
+            <Route path="calculator" element={<ComingSoon />} />
             <Route path="contractors" element={<Contractors />} />
             <Route path="locations" element={<Locations />} />
             <Route path="sellers" element={<Sellers />} />

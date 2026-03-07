@@ -90,6 +90,11 @@ const resources = {
                 "contractors_title": "Contractor Registration",
                 "contact_title": "Contact Us",
                 "sellers_title": "Where to Buy"
+            },
+            "coming_soon": {
+                "title": "Coming Soon",
+                "desc": "This page is currently under development. We're working hard to bring you something amazing!",
+                "btn": "Return to Home"
             }
         }
     },
@@ -179,6 +184,11 @@ const resources = {
                 "contractors_title": "කොන්ත්‍රාත්කරු ලියාපදිංචිය",
                 "contact_title": "අප අමතන්න",
                 "sellers_title": "මිලදී ගත හැකි ස්ථාන"
+            },
+            "coming_soon": {
+                "title": "ඉක්මනින් බලාපොරොත්තු වන්න",
+                "desc": "මෙම පිටුව දැනට සංවර්ධනය වෙමින් පවතී. අප ඔබට විශිෂ්ට යමක් ගෙන ඒමට මහන්සි වී වැඩ කරමින් සිටිමු!",
+                "btn": "මුල් පිටුවට යන්න"
             }
         }
     }
