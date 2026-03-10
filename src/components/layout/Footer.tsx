@@ -1,5 +1,5 @@
+import { Facebook, Instagram, Mail, MapPin, Phone } from 'lucide-react';
 import { useTranslation } from 'react-i18next';
-import { Facebook, Instagram, Phone, Mail, MapPin } from 'lucide-react';
 import { siteConfig } from '../../config/site';
 
 const Footer = () => {
@@ -14,8 +14,9 @@ const Footer = () => {
                     <div className="col-span-1 md:col-span-1">
                         <img
                             src="/logo.png"
-                            alt="ABC Paints"
-                            className="h-10 sm:h-12 w-auto mb-4 object-contain brightness-0 invert"
+                            alt="ABC Paints - Health Paint Expert"
+                            className="h-10 sm:h-12 w-auto mb-4 object-contain"
+                        // className="h-8 sm:h-12 w-auto object-contain dark:brightness-0 dark:invert transition-all"
                         />
                         <p className="text-gray-400 text-sm">
                             {t('footer.about_desc')}
