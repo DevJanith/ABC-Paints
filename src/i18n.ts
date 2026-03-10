@@ -95,6 +95,11 @@ const resources = {
                 "title": "Coming Soon",
                 "desc": "This page is currently under development. We're working hard to bring you something amazing!",
                 "btn": "Return to Home"
+            },
+            "not_found": {
+                "title": "Page Not Found",
+                "desc": "The page you are looking for might have been removed, had its name changed, or is temporarily unavailable.",
+                "btn": "Back to Home"
             }
         }
     },
@@ -188,6 +193,11 @@ const resources = {
             "coming_soon": {
                 "title": "ඉක්මනින් බලාපොරොත්තු වන්න",
                 "desc": "මෙම පිටුව දැනට සංවර්ධනය වෙමින් පවතී. අප ඔබට විශිෂ්ට යමක් ගෙන ඒමට මහන්සි වී වැඩ කරමින් සිටිමු!",
+                "btn": "මුල් පිටුවට යන්න"
+            },
+            "not_found": {
+                "title": "පිටුව හමු නොවීය",
+                "desc": "ඔබ සොයන පිටුව ඉවත් කර තිබිය හැක, එහි නම වෙනස් කර ඇත, නැතහොත් තාවකාලිකව ලබා ගත නොහැක.",
                 "btn": "මුල් පිටුවට යන්න"
             }
         }

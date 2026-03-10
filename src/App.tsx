@@ -11,6 +11,7 @@ import Contractors from './pages/Contractors';
 import Locations from './pages/Locations';
 import Contact from './pages/Contact';
 import ComingSoon from './pages/ComingSoon';
+import NotFound from './pages/NotFound';
 
 import Sellers from './pages/Sellers';
 
@@ -32,6 +33,7 @@ function App() {
             <Route path="locations" element={<Locations />} />
             <Route path="sellers" element={<Sellers />} />
             <Route path="contact" element={<Contact />} />
+            <Route path="*" element={<NotFound />} />
           </Route>
         </Routes>
       </Router>
