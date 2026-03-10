@@ -4,10 +4,10 @@ import { useTranslation } from 'react-i18next';
 const partners = [
     { id: 1, name: 'Maliban', logo: '/images/partners/partner_logo_1.png' },
     { id: 2, name: 'Dialog', logo: '/images/partners/partner_logo_2.png' },
-    { id: 3, name: 'Wonder Back', logo: '/images/partners/partner_logo_3.png' },
-    { id: 4, name: 'SteelCore', logo: '/images/partners/partner_logo_1.png' },
-    { id: 5, name: 'StudioArch', logo: '/images/partners/partner_logo_2.png' },
-    { id: 6, name: 'UrbanBuild', logo: '/images/partners/partner_logo_3.png' },
+    // { id: 3, name: 'Wonder Back', logo: '/images/partners/partner_logo_3.png' },
+    // { id: 4, name: 'SteelCore', logo: '/images/partners/partner_logo_1.png' },
+    // { id: 5, name: 'StudioArch', logo: '/images/partners/partner_logo_2.png' },
+    // { id: 6, name: 'UrbanBuild', logo: '/images/partners/partner_logo_3.png' },
 ];
 
 // Duplicate for seamless looping. Increase count if needed for very wide screens.
