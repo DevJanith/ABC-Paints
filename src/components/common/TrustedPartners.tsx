@@ -45,6 +45,19 @@ const TrustedPartners = () => {
                     {duplicatedPartners.map((partner, index) => (
                         <div
                             key={`${partner.id}-${index}`}
+                            className="group/card flex flex-col items-center justify-center transition-all duration-500 cursor-pointer px-8 py-6 rounded-2xl hover:bg-white dark:hover:bg-white/5 hover:shadow-[0_8px_30px_rgb(0,0,0,0.08)] dark:hover:shadow-[0_8px_30px_rgba(255,255,255,0.04)] hover:-translate-y-1.5 border border-transparent hover:border-gray-100 dark:hover:border-white/10"
+                        >
+                            <img
+                                src={partner.logo}
+                                alt={`${partner.name} logo`}
+                                className="h-12 md:h-16 w-auto object-contain brightness-110 mb-2 transition-transform duration-500 group-hover/card:scale-105"
+                                loading="lazy"
+                            />
+                            <span className="text-[10px] uppercase tracking-widest text-gray-400 font-medium opacity-0 group-hover/card:opacity-100 transition-opacity duration-500">
+                                {partner.name}
+                            </span>
+                            {/* <div
+                            key={`${partner.id}-${index}`}
                             className="flex flex-col items-center justify-center grayscale opacity-30 hover:grayscale-0 hover:opacity-100 transition-all duration-700 cursor-pointer px-6"
                         >
                             <img
@@ -56,6 +69,7 @@ const TrustedPartners = () => {
                             <span className="text-[10px] uppercase tracking-widest text-gray-400 font-medium opacity-0 group-hover:opacity-100 transition-opacity duration-500">
                                 {partner.name}
                             </span>
+                        </div> */}
                         </div>
                     ))}
                 </motion.div>
